@@ -1,0 +1,228 @@
+{
+  "idiomas": [
+    {
+      "nome": "Holandês",
+      "temporada": 1,
+      "episodios": [
+        {
+          "titulo": "Holandês Básico - Palavras 3",
+          "id": "1LyF9YCgxvjbNP8QNtasnd",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Holandês Básico - Palavras 2",
+          "id": "4fMd5ZGrJdENSs8YbiqTx6",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Holandês Básico - Palavras 1",
+          "id": "5H5ZAOBnqUgX6jIeoG0sSw",
+          "duracao": "6min"
+        },
+        {
+          "titulo": "Holandês Básico - Turismo",
+          "id": "20OAyAfdcGzFlBGXOEtwku",
+          "duracao": "3min"
+        },
+        {
+          "titulo": "Holandês Básico - Perguntas Essenciais",
+          "id": "6ZwwOxhqey4TtCFsqSAoOz",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Holandês Básico - Saúde",
+          "id": "1639JPTUmT8VMOWrAgBVYa",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Holandês Básico - Transporte",
+          "id": "2FKwjL4IPVj1CMe3jgxrNg",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Holandês Básico - Compras",
+          "id": "7ITxSCtxCKobQGnlp46Ry5",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Holandês Básico - Restaurante",
+          "id": "4khBhUTuCh8RLH5ZUTUcf3",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Holandês Básico - Saudações",
+          "id": "5M2KNZvugNq7MIMJKnL1vp",
+          "duracao": "5min"
+        }
+      ]
+    },
+    {
+      "nome": "Italiano",
+      "temporada": 2,
+      "episodios": [
+        {
+          "titulo": "Italiano Básico - Palavras 1",
+          "id": "3KH4xiCJhLB9VYspOBZJUN",
+          "duracao": "6min"
+        },
+        {
+          "titulo": "Italiano Básico - Palavras 3",
+          "id": "232O52QZLgZexGbQX8CACU",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Italiano Básico - Palavras 2",
+          "id": "6RG4MxX3zvPgoPxxClT4CK",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Italiano Básico - Turismo",
+          "id": "3WiemIjmWc3VdzG7aIIBBr",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Italiano Básico - Perguntas Essenciais",
+          "id": "6we1zxpGgrWWLNeyUtz7W1",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Italiano Básico - Ajuda e Saúde",
+          "id": "5tUBpN7Gvzjo8K7FfbTMAv",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Italiano Básico - Trasnporte",
+          "id": "1RvnQnImIF6SZNVBCDbISu",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Italiano Básico - Compras",
+          "id": "4uAKePfcWLjG8v2uHjNCD8",
+          "duracao": "6min"
+        },
+        {
+          "titulo": "Italiano Básico - Restaurante",
+          "id": "1KISmag3mw98n8OYmZumXX",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Italiano Básico - Saudações",
+          "id": "452dXp5pAmDqlgzlbjafIV",
+          "duracao": "5min"
+        }
+      ]
+    },
+    {
+      "nome": "Espanhol",
+      "temporada": 3,
+      "episodios": [
+        {
+          "titulo": "Espanhol Básico - Palavras 1",
+          "id": "5s6528Z9GTHKzL0QIADTUf",
+          "duracao": "6min"
+        },
+        {
+          "titulo": "Espanhol Básico - Perguntas 2",
+          "id": "0aZ6IBZwGMHE0M0ivCNKHY",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Perguntas 3",
+          "id": "2naYTFaaNw5Z686Wz5O5Vm",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Turismo",
+          "id": "0Fz16TsePmiIq7oIwA8E0o",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Perguntas Essenciais",
+          "id": "5fTAx6gXtwMhy6UhbF8r0n",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Ajuda e Saúde",
+          "id": "126EqlGGq1g8s7JY3hsIBt",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Transportes",
+          "id": "2AAzioVuynppD8nU55cKtX",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Compras",
+          "id": "6zSZIcoU7qqI5rJ2A2PqVE",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Restaurante",
+          "id": "2mb1HXMMU2GavQ60nMYF9u",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Espanhol Básico - Saudações",
+          "id": "3eNdgCU4eYzw7VlOE4YMRM",
+          "duracao": "5min"
+        }
+      ]
+    },
+    {
+      "nome": "Francês",
+      "temporada": 4,
+      "episodios": [
+        {
+          "titulo": "Francês Básico - Palavras 3",
+          "id": "3PjkqPCZTVu73VQM7iBzeC",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Palavras 2",
+          "id": "5D7cCB0Lwu0b8lrpxpS7V9",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Palavras 1",
+          "id": "0O6XVpgZoXGXljXNpXVX6f",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Perguntas Essenciais",
+          "id": "4OTmTz4kLsXbT8QHTtScTQ",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Turismo",
+          "id": "2FjGuZwnFIiRIhnJv7zBGd",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Ajuda e Saúde",
+          "id": "5XXv5AackDJXuDf3KPyLbF",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Transporte",
+          "id": "7378Rg3bKivrULri8lw6CV",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Compras",
+          "id": "47o8modjsA2mgBaNsmnUNk",
+          "duracao": "4min"
+        },
+        {
+          "titulo": "Francês Básico - Restaurante",
+          "id": "5zTYDYlqsNNRYMoZjQwbfi",
+          "duracao": "5min"
+        },
+        {
+          "titulo": "Francês Básico - Saudações",
+          "id": "68P6MiXxLXePhEUku8uFXw",
+          "duracao": "6min"
+        }
+      ]
+    }
+  ]
+}

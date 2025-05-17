@@ -79,17 +79,19 @@
 
     <section id="episodios" class="episodios">
         <div class="container">
-            <h2>Últimos Episódios</h2>
-            <div class="spotify-embeds">
-                <div class="spotify-embed-item">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1LyF9YCgxvjbNP8QNtasnd?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div class="spotify-embed-item">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/5LOKjg5q8T9Hq0qjPDRHj7?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <h2>Episódios</h2>
+            <div class="idioma-tabs">
+                <!-- As abas de idiomas serão geradas dinamicamente aqui via JavaScript -->
+            </div>
+            <div class="episodios-container">
+                <!-- Os episódios serão carregados aqui dinamicamente via JavaScript -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                    <p>Carregando episódios...</p>
                 </div>
             </div>
             <div class="mais-episodios">
-                <a href="https://open.spotify.com/show/5LOKjg5q8T9Hq0qjPDRHj7" class="btn btn-secondary" target="_blank">Ver todos os episódios</a>
+                <a href="https://open.spotify.com/show/5LOKjg5q8T9Hq0qjPDRHj7" class="btn btn-secondary" target="_blank">Ver todos no Spotify</a>
             </div>
         </div>
     </section>
@@ -167,5 +169,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/episodes-loader.js"></script>
 </body>
 </html>

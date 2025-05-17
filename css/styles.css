@@ -512,6 +512,98 @@ nav ul li a:hover::after {
     color: var(--dark-color);
 }
 
+/* Estilos para seção de episódios com abas por idioma */
+.idioma-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.idioma-tab {
+    padding: 12px 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.idioma-tab:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.idioma-tab.active {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border: 2px solid var(--primary-color);
+}
+
+.episodios-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.temporada {
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.temporada.active {
+    display: flex;
+}
+
+.temporada-titulo {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--accent-color);
+}
+
+.spotify-embed {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 15px;
+    transition: var(--transition);
+}
+
+.spotify-embed:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.loading {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--light-gray);
+}
+
+.loading i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Estilos para placeholders durante o carregamento */
+.placeholder-embed {
+    height: 160px;
+    background: linear-gradient(110deg, #1a1a1a 8%, #272727 18%, #1a1a1a 33%);
+    border-radius: 12px;
+    animation: shine 1.5s linear infinite;
+    background-size: 200% 100%;
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
+
 /* Seção Contato */
 .contato {
     background-color: var(--dark-color);
