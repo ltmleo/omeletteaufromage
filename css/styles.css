@@ -7,8 +7,8 @@
 
 :root {
     --primary-color: #1DB954; /* Verde Spotify */
-    --secondary-color: #FF8E3C; /* Laranja queijo - referência ao Fromage */
-    --accent-color: #FFC107; /* Amarelo - referência ao ovo */
+    --secondary-color: #FF7D00; /* Laranja mais vibrante para o queijo */
+    --accent-color: #FFDE59; /* Amarelo ovo mais vibrante */
     --dark-color: #121212; /* Fundo escuro como no app Spotify */
     --light-color: #f5f5f5;
     --gray-color: #535353;
@@ -647,6 +647,10 @@ footer {
     .footer-links ul {
         justify-content: center;
     }
+
+    .spotify-embeds {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -692,4 +696,25 @@ html {
 .scroll-section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Estilo para players incorporados do Spotify */
+.spotify-embeds {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.spotify-embed-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 10px;
+    transition: var(--transition);
+}
+
+.spotify-embed-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    background: rgba(255, 255, 255, 0.08);
 }
