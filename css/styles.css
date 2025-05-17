@@ -810,3 +810,312 @@ html {
     box-shadow: var(--shadow);
     background: rgba(255, 255, 255, 0.08);
 }
+
+/* Estilos para os placeholders de episódios do Spotify */
+.spotify-placeholder {
+    width: 100%;
+    height: 352px;
+    border-radius: 12px;
+    background-color: #1db954;
+    background-image: linear-gradient(45deg, #1db954, #191414);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.spotify-placeholder-content {
+    padding: 20px;
+    max-width: 80%;
+}
+
+.spotify-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.spotify-placeholder h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.spotify-placeholder p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.load-episode-btn {
+    background-color: white;
+    color: #191414;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.load-episode-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Estilos para mensagem de erro 429 */
+.error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ffefef;
+    border: 1px solid #ffbdbd;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+    color: #d32f2f;
+}
+
+.error-message i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Estilos para os novos cartões de episódios */
+.episode-card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.episode-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.episode-icon i {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.episode-details {
+    flex-grow: 1;
+}
+
+.episode-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--light-color);
+}
+
+.episode-duration {
+    font-size: 0.9rem;
+    color: var(--light-gray);
+    margin-bottom: 15px;
+}
+
+.episode-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-listen, .btn-preview {
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-listen {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border: none;
+}
+
+.btn-listen:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+}
+
+.btn-preview {
+    background-color: transparent;
+    border: 1px solid var(--light-gray);
+    color: var(--light-color);
+}
+
+.btn-preview:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+/* Estilos para o modal de pré-visualização */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #232323;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    color: var(--light-gray);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.close-modal:hover {
+    color: var(--primary-color);
+}
+
+.modal-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.preview-note {
+    margin-bottom: 15px;
+    color: var(--light-gray);
+    font-style: italic;
+}
+
+.preview-player {
+    margin: 20px 0;
+}
+
+.preview-player audio {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #121212;
+}
+
+.preview-spotify-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-spotify {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: #000;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-spotify:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+    color: #000;
+}
+
+.modal-footer {
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--light-gray);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Responsividade para os cartões de episódios */
+@media (max-width: 600px) {
+    .episode-card {
+        flex-direction: column;
+    }
+    
+    .episode-icon {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    
+    .episode-actions {
+        justify-content: center;
+    }
+}
+
+/* Estilos para o episódio em destaque com iframe */
+.featured-episode {
+    margin-bottom: 40px;
+    position: relative;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 15px;
+    background: rgba(29, 185, 84, 0.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.featured-label {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 1;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured-label i {
+    color: #FFD700;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
