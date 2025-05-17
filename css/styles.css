@@ -512,6 +512,36 @@ nav ul li a:hover::after {
     color: var(--dark-color);
 }
 
+/* Estilos para cartões de idiomas em breve */
+.idioma-card.coming-soon {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    opacity: 0.8;
+}
+
+.idioma-card.coming-soon .idioma-icon {
+    background: rgba(155, 155, 155, 0.1);
+}
+
+.idioma-card.coming-soon .idioma-icon i {
+    color: var(--accent-color);
+}
+
+.idioma-card.coming-soon:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.idioma-card.coming-soon h3 {
+    color: var(--light-gray);
+}
+
+.idioma-card.coming-soon p {
+    color: var(--accent-color);
+    font-style: italic;
+    font-weight: 500;
+}
+
 /* Estilos para seção de episódios com abas por idioma */
 .idioma-tabs {
     display: flex;

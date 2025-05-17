@@ -80,6 +80,52 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         document.body.classList.add('loaded');
     }, 500);
+    
+    // Função para inicializar os cartões de idiomas clicáveis
+    function initIdiomaCards() {
+        // Aguardar um pouco para garantir que as abas de idiomas já foram carregadas
+        setTimeout(() => {
+            const idiomaCards = document.querySelectorAll('.idioma-card:not(.coming-soon)');
+            
+            idiomaCards.forEach((card, index) => {
+                // Tornar o cartão clicável
+                card.style.cursor = 'pointer';
+                
+                // Adicionar evento de clique
+                card.addEventListener('click', function() {
+                    // Rolar até a seção de episódios
+                    const episodiosSection = document.getElementById('episodios');
+                    if (episodiosSection) {
+                        window.scrollTo({
+                            top: episodiosSection.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Esperar a rolagem antes de ativar a aba correta
+                        setTimeout(() => {
+                            // Obter o nome do idioma sem emoji
+                            const idiomaNome = card.querySelector('h3').textContent.split(' ')[0];
+                            
+                            // Encontrar a aba de idioma correspondente
+                            const idiomaTabs = document.querySelectorAll('.idioma-tab');
+                            idiomaTabs.forEach(tab => {
+                                if (tab.textContent.includes(idiomaNome)) {
+                                    // Simular um clique na aba
+                                    tab.click();
+                                }
+                            });
+                        }, 500);
+                    }
+                });
+                
+                // Adicionar tooltip para indicar a ação
+                card.setAttribute('title', 'Clique para ver os episódios deste idioma');
+            });
+        }, 1000); // Esperar 1 segundo para garantir que tudo foi carregado
+    }
+    
+    // Inicializar os cartões de idiomas clicáveis
+    initIdiomaCards();
 });
 
 // Função para inicializar o player integrado do Spotify
