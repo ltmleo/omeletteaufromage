@@ -48,6 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
+                
+                // Se o menu mobile estiver aberto, feche-o após clicar em um link
+                const mainNav = document.querySelector('.main-nav');
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                }
             }
         });
     });
@@ -74,12 +80,32 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 200);
         });
     });
-
-    // Simular carregamento de conteúdo - remover em produção
-    // Este código é apenas para demonstração
-    setTimeout(() => {
-        document.body.classList.add('loaded');
-    }, 500);
+    
+    // Controle do menu mobile
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            
+            // Mudar ícone quando o menu é aberto/fechado
+            const icon = this.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+            } else {
+                icon.className = 'fas fa-bars';
+            }
+        });
+        
+        // Fechar o menu mobile ao redimensionar a janela para desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768 && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                mobileMenuToggle.querySelector('i').className = 'fas fa-bars';
+            }
+        });
+    }
     
     // Função para inicializar os cartões de idiomas clicáveis
     function initIdiomaCards() {
@@ -126,6 +152,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Inicializar os cartões de idiomas clicáveis
     initIdiomaCards();
+    
+    // Simular carregamento de conteúdo - remover em produção
+    // Este código é apenas para demonstração
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 500);
 });
 
 // Função para inicializar o player integrado do Spotify
