@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Header com efeito de mudança ao rolar
     const header = document.querySelector('header');
+    // A barra <ltm-bar> (36px) fica no fluxo acima do header fixo: o header desce junto até ela sumir
+    const BAR_H = 36;
+    const followBar = () => { header.style.top = `${Math.max(0, BAR_H - window.scrollY)}px`; };
+    followBar();
+    window.addEventListener('scroll', followBar, { passive: true });
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
             header.style.padding = '10px 0';
