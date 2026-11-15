@@ -137,9 +137,10 @@ section {
 }
 
 /* Header e Navegação */
+/* começa abaixo da barra <ltm-bar> (36px); o JS sobe o header até 0 conforme a barra sai da tela */
 header {
     position: fixed;
-    top: 0;
+    top: 36px;
     left: 0;
     width: 100%;
     padding: 20px 0;
